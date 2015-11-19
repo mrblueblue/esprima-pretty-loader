@@ -1,0 +1,32 @@
+{
+  "name": "esprima-pretty-print-loader",
+  "version": "0.1.0",
+  "description": "pretty print or write esprima ast's",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrblueblue/esprima-pretty-print-loader.git"
+  },
+  "keywords": [
+    "esprima",
+    "webpack",
+    "loader",
+    "ast",
+    "pretty",
+    "print",
+    "fun"
+  ],
+  "author": "Jonathan Huang <jon@levity.io>",
+  "license": "MIT",
+  "dependencies": {
+    "esprima-fb": "^15001.1001.0-dev-harmony-fb",
+    "loader-utils": "^0.2.11"
+  },
+  "bugs": {
+    "url": "https://github.com/mrblueblue/esprima-pretty-print-loader/issues"
+  },
+  "homepage": "https://github.com/mrblueblue/esprima-pretty-print-loader#readme"
+}
