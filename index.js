@@ -1,6 +1,7 @@
 var fs = require('fs');
 var esprima = require('esprima-fb');
 var loaderUtils = require('loader-utils');
+var R = require('ramda');
 
 module.exports = function(source){
 
@@ -26,9 +27,9 @@ module.exports = function(source){
   }
 
   if (options.write) {
-    var resourceFileName = this.resourcePath.split('/')[0];
-    var outputFileName = 'AST' + resourceFileName;
-    var prettyOutput = JSON.stringify(ast, null '\t');
+    var resourceFileName = R.last(R.split('/', this.resourcePath));
+    var outputFileName = 'ast-' + resourceFileName;
+    var prettyOutput = JSON.stringify(ast, null, '\t');
     fs.writeFileSync(resourceFileName, prettyOutput);
   }
 

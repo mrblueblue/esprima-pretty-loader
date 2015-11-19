@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "description": "pretty print or write esprima ast's",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mrblueblue/esprima-pretty-print-loader.git"
@@ -23,7 +20,8 @@
   "license": "MIT",
   "dependencies": {
     "esprima-fb": "^15001.1001.0-dev-harmony-fb",
-    "loader-utils": "^0.2.11"
+    "loader-utils": "^0.2.11",
+    "ramda": "^0.18.0"
   },
   "bugs": {
     "url": "https://github.com/mrblueblue/esprima-pretty-print-loader/issues"
