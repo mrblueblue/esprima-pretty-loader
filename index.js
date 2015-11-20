@@ -9,8 +9,9 @@ module.exports = function(source){
 
   var options = {
     print: query.print || true,
-    write: query.write || false
-  }
+    write: query.write || false,
+    export: query.export || false
+  };
 
   if (this.cacheable) {
     this.cacheable();
@@ -30,6 +31,11 @@ module.exports = function(source){
     var resourceFileName = R.last(R.split('/', this.resourcePath));
     var outputFileName = 'ast-' + resourceFileName;
     var prettyOutput = JSON.stringify(ast, null, 2);
+
+    if (options.export){
+      prettyOutput = 'module.exports = ' + prettyOutput;
+    }
+
     fs.writeFileSync(outputFileName, prettyOutput);
   }
 

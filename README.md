@@ -11,7 +11,9 @@ npm install
 
 Add it as a loader in your webpack config.
 
-Support flags are `write` and `print`. Their defaults are `false` and `true`, respectively.
+Support flags are `write`, `print`, and `export`. Their defaults are `false`, `true`, and `false`, respectively.
+
+The `export` flag will make your AST an exportable object that you can `require` in.
 
 ```javascript
 module: {
