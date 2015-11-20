@@ -1,6 +1,6 @@
 {
   "name": "esprima-pretty-print-loader",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "pretty print or write esprima ast's",
   "main": "index.js",
   "repository": {
