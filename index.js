@@ -29,7 +29,7 @@ module.exports = function(source){
   if (options.write) {
     var resourceFileName = R.last(R.split('/', this.resourcePath));
     var outputFileName = 'ast-' + resourceFileName;
-    var prettyOutput = JSON.stringify(ast, null, '\t');
+    var prettyOutput = JSON.stringify(ast, null, 2);
     fs.writeFileSync(outputFileName, prettyOutput);
   }
 
