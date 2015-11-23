@@ -8,7 +8,7 @@ module.exports = function(source){
   var query = loaderUtils.parseQuery(this.query);
 
   var options = {
-    print: query.print || true,
+    print: query.print && true,
     write: query.write || false,
     export: query.export || false
   };

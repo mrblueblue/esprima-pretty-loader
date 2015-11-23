@@ -1,4 +1,4 @@
-# esprima-pretty-print-loader
+# esprima-pretty-loader
 
 Print or write out your code's AST in a pretty manner
 
@@ -21,7 +21,7 @@ module: {
     {
       test: /\.jsx?$/,
       exclude: /(node_modules)/,
-      loaders: ['babel', 'esprima-pretty-print?write']
+      loaders: ['babel', 'esprima-pretty?write']
     }
   ]
 },
@@ -29,7 +29,7 @@ module: {
 ```
 The above example will print out your code's AST as well as writing it to a file.
 
-To turn off printing and only write to a file, set the loader as `esprima-pretty-print?+write,-print`.
+To turn off printing and only write to a file, set the loader as `esprima-pretty?+write,-print`.
 
 Note: this loader does not modify your source code. It only console.logs it and / or writes it to a file.
 

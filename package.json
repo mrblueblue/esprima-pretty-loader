@@ -1,11 +1,11 @@
 {
-  "name": "esprima-pretty-print-loader",
-  "version": "0.1.2",
+  "name": "esprima-pretty-loader",
+  "version": "0.1.3",
   "description": "pretty print or write esprima ast's",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrblueblue/esprima-pretty-print-loader.git"
+    "url": "git+https://github.com/mrblueblue/esprima-pretty-loader.git"
   },
   "keywords": [
     "esprima",
